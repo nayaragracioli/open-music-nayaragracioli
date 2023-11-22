@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Music</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/responsive.css" />
+
+    <!-- SCRIPTS  -->
+    <script type="module" src="./src/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Open Music</h1>
+      <button>
+        <figure>
+          <img src="./src/assets/img/moon.svg" alt="moon">
+        </figure>
+      </button>
+    </header>
+    <main>
+      <section class="managingFilter">
+        <div class="filterDiv">
+          <h2 class="filterTitle">Gênero Musical</h2>
+          <ul class="filterList"></ul>
+        </div>
+        <section class="container">
+          <div class="containerDiv">
+            <h2 class="containerTitle">Definir Preço</h2>
+            <p class="containerText">Até R$ <output id="rangeValue">...</output></p>
+            <input class="rangeInput" type="range" min="0" max="90" step="2" value="0" >
+          </div>
+        </section>
+      </section>
+      <section class="renderCard">
+        <h2 class="cardTitle">Álbuns Encontrados</h2>
+        <ul class="cardList"></ul>
+      </section>
+    </main>
+  </body>
+</html>
